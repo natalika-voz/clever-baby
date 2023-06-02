@@ -1,0 +1,8 @@
+{
+  "plugins": {
+    "postcss-opacity-percentage": {},
+    "postcss-nesting": {},
+    "postcss-media-minmax": {},
+    "autoprefixer": {}
+  }
+}
