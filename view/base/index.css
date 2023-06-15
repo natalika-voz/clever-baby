@@ -1,4 +1,4 @@
-@import url("./fonts.css");
+@import url("../montserrat/montserrat.css");
 @import url("./colors.css");
 
 *,
@@ -12,7 +12,7 @@ html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
