@@ -1,0 +1,26 @@
+.training {
+  padding-block: 60px;
+}
+
+.training__title {
+  margin-block-start: 0;
+  margin-block-end: 40px;
+  text-align: center;
+}
+
+.training__slogan {
+  margin-block: 0 25px;
+  margin-inline: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.training__text {
+  margin-block-start: 0;
+  margin-block-end: 35px;
+}
+
+.training__subtitle {
+  font-size: 16px;
+  font-weight: 500;
+}

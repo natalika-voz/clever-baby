@@ -6,6 +6,7 @@
   --pink: oklch(85.47% 0.083 0.89);
   --dark-blue: oklch(28.62% 0.096 264.81);
   --gray: oklch(54.52% 0.035 266.93);
+  --beige: oklch(98.6% 0.007 80.72);
 
   --surface-0: var(--white);
   --surface-1: var(--weak-blue);
@@ -14,6 +15,7 @@
   --text-secondary: var(--gray);
   --surface-4: var(--yellow);
   --surface-5: var(--pink);
+  --surface-6: var(--beige);
 }
 
 @media (prefers-color-scheme: dark) {

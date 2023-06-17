@@ -1,0 +1,29 @@
+.hero {
+  position: relative;
+  padding-block: 60px;
+  background-color: var(--beige);
+
+  &::after {
+    position: absolute;
+    top: 12px;
+    left: 3px;
+    content: "";
+    height: 38px;
+    width: 48px;
+    background-image: url("/view/hero/car.svg");
+  }
+}
+
+.hero__title {
+  margin-block-start: 0;
+  margin-block-end: 45px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.hero__description {
+  min-width: 260px;
+  margin-block-start: 0;
+  margin-block-end: 30px;
+}
+
