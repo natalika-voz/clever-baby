@@ -5,12 +5,26 @@
 
   &::after {
     position: absolute;
-    top: 12px;
-    left: 3px;
+    top: 15px;
+    left: 20px;
     content: "";
     height: 38px;
     width: 48px;
     background-image: url("/view/hero/car.svg");
+  }
+
+  @media (width > 767px) {
+    padding-block: 90px 130px;
+    background-image: url("/view/hero/hero-background-tablet.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    max-height: 440px;
+
+    &::after {
+      height: 46px;
+      width: 58px;
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -19,11 +33,31 @@
   margin-block-end: 45px;
   font-size: 28px;
   font-weight: 500;
+
+  @media (width > 767px) {
+    margin-block-end: 15px;
+  }
+}
+
+.hero__text {
+  display: none;
+
+  @media (width > 767px) {
+    display: block;
+    margin-block-end: 30px;
+    font-size: 18px;
+    font-weight: 500;
+  }
 }
 
 .hero__description {
   min-width: 260px;
   margin-block-start: 0;
   margin-block-end: 30px;
+
+  @media (width > 767px) {
+    max-width: 375px;
+    margin-block-end: 45px;
+  }
 }
 

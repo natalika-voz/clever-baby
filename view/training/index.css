@@ -1,11 +1,32 @@
 .training {
+  position: relative;
   padding-block: 60px;
+
+  &::after {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    content: "";
+    height: 34px;
+    width: 67px;
+    background-image: url("/view/training/rocket.svg");
+  }
+
+  @media (width > 767px) {
+    padding-block: 110px;
+  }
 }
 
 .training__title {
   margin-block-start: 0;
   margin-block-end: 40px;
+  font-size: 22px;
+  font-weight: 500;
   text-align: center;
+
+  @media (width > 767px) {
+    font-size: 36px;
+  }
 }
 
 .training__slogan {
@@ -21,6 +42,7 @@
 }
 
 .training__subtitle {
+  margin-block-end: 25px;
   font-size: 16px;
   font-weight: 500;
 }
