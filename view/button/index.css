@@ -12,3 +12,15 @@
   cursor: pointer;
   border: none;
 }
+
+.button--cyan {
+  background-color: var(--cyan);
+}
+
+.button--yellow {
+  background-color: var(--yellow);
+}
+
+.button--pink {
+  background-color: var(--pink);
+}

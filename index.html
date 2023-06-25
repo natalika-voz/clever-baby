@@ -1,128 +1,159 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clever Baby</title>
+  <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
-  <header class="main-header">
-    <div class="container">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link nav__link--active" href="#">CleverBaby</a>
+  <header class="header">
+    <div class="header__container">
+      <a class="header__logo" href="#">
+        <img class="header__logo-image" src="./view/header/clever-baby.svg" width="111" height="17" alt="Логотип сайта Clever Baby">
+      </a>
+
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li>
+            <a class="header__link" href="#">Методика</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Методика</a>
+          <li>
+            <a class="header__link" href="#">Преподаватели</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Преподаватели</a>
+          <li>
+            <a class="header__link" href="#">Группы</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Группы</a>
+          <li>
+            <a class="header__link" href="#">Отзывы</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Отзывы</a>
+          <li>
+            <a class="header__link" href="#">Контакты</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Контакты</a>
-          </li>
-          <li class="nav__item nav__item--menu" role="none">
+          <!-- <li class="header__item header__item--menu" role="none">
             <button class="toggle-menu" type="button" aria-label="Меню" aria-expanded="true"></button>
-          </li>
-          <li class="nav__item">
-            <a href=”tel:+74959834719”>+ 7 (495) 983-47-19</a>
+          </li> -->
+          <li class="header__item">
+            <a class="header__phone" href=”tel:+74959834719”>
+              <img src="./view/header/handset.svg" alt="">
+              + 7 (495) 983-47-19</a>
           </li>
         </ul>
       </nav>
-      <a class="main-header__logo" href="#">CleverBaby</a>
     </div>
   </header>
+
   <main class="main">
     <section class="hero">
-      <h1 class="hero__title">Английский язык</h1>
-      <span class="hero__text">для детей от 2 до 7 лет</span>
-      <p class="hero__description">Гармоничное развитие детей и обучение через полное погружение в языковую среду</p>
-      <a href="#">Записаться</a>
+      <div class="container">
+        <h1 class="hero__title">Английский язык</h1>
+        <span class="hero__text">для детей от 2 до 7 лет</span>
+        <p class="hero__description">Гармоничное&nbsp;развитие&nbsp;детей и обучение через полное погружение в языковую среду</p>
+        <a class="button" href="#">Записаться</a>
+      </div>
     </section>
+
     <section class="training">
       <div class="container">
         <h2 class="training__title">Как проходит обучение</h2>
-        <blockquote class="training__slogan">Играя — обучаем, обучая — развиваем</blockquote>
-        <p class="training__text">Мы взяли все самое лучшее из традиционных и современных методик обучения и развития детей. Обучение английскому языку происходит легко и интересно, ведь малыши не зубрят материал по учебникам, а познают его через игру, сказки, книги и музыку. </p>
-        <p class="training__text">Наша методика также включает в себя обучение по программе Cambridge. Благодаря этому, наши ученики       без труда сдают международные и государственные экзамены. </p>
-        <div class="classes">
-          <h3>Посмотрите, как проходят наши занятия</h3>
-          <div class="classes__preview">
-            <picture>
-              <img class="classes__image" alt="Изображение превью видео как занимаются дети">
-            </picture>
-            <button class="classes__play" type="button"><span class="visually-hidden">Воспроизвести видео</span></button>
+        <div class="training__wrapper">
+          <div class="training__container">
+            <blockquote class="training__slogan">Играя — обучаем, обучая — развиваем</blockquote>
+            <p class="training__text training__text--methods">Мы взяли все самое лучшее из традиционных и современных методик обучения и развития детей. Обучение английскому языку происходит легко и интересно, ведь малыши не зубрят материал по учебникам, а познают его через игру, сказки, книги и музыку. </p>
+            <p class="training__text training__text--сambridge">Наша методика также включает в себя обучение по программе Cambridge. Благодаря этому, наши ученики       без труда сдают международные и государственные экзамены. </p>
+          </div>
+          <div class="classes">
+            <h3 class="classes__subtitle">Посмотрите, как проходят<br> наши занятия</h3>
+            <div class="classes__preview">
+              <picture>
+                <source media="(min-width: 1366px)" type="image/avif" srcset="view/training/video-preview-d@1x.avif, view/training/video-preview-d@2x.avif 2x">
+                <source media="(min-width: 1366px)" type="image/jpeg" srcset="view/training/video-preview-d@1x.jpg, view/training/video-preview-d@2x.jpg 2x">
+
+                <source media="(min-width: 768px)" type="image/avif" srcset="view/training/video-preview-t@1x.avif, view/training/video-preview-t@2x.avif 2x">
+                <source media="(min-width: 768px)" type="image/jpeg" srcset="view/training/video-preview-t@1x.jpg, view/training/video-preview-t@2x.jpg 2x">
+
+                <source type="image/avif" srcset="view/training/video-preview-m@1x.avif, view/training/video-preview-m@2x.avif 2x">
+                <img class="classes__image" src="view/training/video-preview-m@1x.jpg" srcset="view/training/video-preview-m@1x.jpg, view/training/video-preview-m@2x.jpg 2x" alt="Ребенок на полу играет с паровозиком из конструктора в комнате с игрушками">
+              </picture>
+              <a class="classes__play" title="Воспроизвести видео">
+              </a>
+            </div>
           </div>
         </div>
         <div class="development">
-          <h3 class="development__title">Развитие 10 видов интеллекта</h3>
-          <p class="development__text">Учимся общаться, развивать эмоциональный, творческий интеллект и многое другое</p>
+          <div class="development__container development__container--intellect">
+            <h3 class="development__title">Развитие 10 видов интеллекта</h3>
+            <p class="development__text">Учимся общаться, развивать эмоциональный, творческий интеллект и многое другое</p>
+          </div>
+          <div class="development__container">
+            <h3 class="development__title development__title--right">Языковое погружение</h3>
+            <p class="development__text development__text--right">Занятия проходят полностью на английском языке, независимо от типа задания</p>
+          </div>
+          <img class="development__image" src="./view/development/girl.png" alt="Девочка смеётся и держится за щёчки">
+          <div class="development__container">
+            <h3 class="development__title">Педагоги — носители языка</h3>
+            <p class="development__text">Занятия ведут преподаватели из США, Великобритании и Канады, для которых английский язык является родным</p>
+          </div>
+          <div class="development__container">
+            <h3 class="development__title">Небольшие группы</h3>
+            <p class="development__text">Дети занимаются в группах до 5 человек, что позволяет применять индивидуальный подход к каждому</p>
+          </div>
         </div>
-        <div class="language-immersion">
-          <h3 class="language-immersion__title">Языковое погружение</h3>
-          <p class="language-immersion__text">Занятия проходят полностью на английском языке, независимо от типа задания</p>
-        </div>
-        <div class="educators">
-          <h3 class="educators__title">Педагоги — носители языка</h3>
-          <p class="educators__text">Занятия ведут преподаватели из США, Великобритании и Канады, для которых английский язык является родным</p>
-        </div>
-        <div class="team">
-          <h3 class="team__title">Небольшие группы</h3>
-          <p class="team__text">Дети занимаются в группах до 5 человек, что позволяет применять индивидуальный подход к каждому</p>
-        </div>
-      </div>
     </section>
-    <section class="our-group">
+
+    <section class="our-groups">
       <div class="container">
-        <h2 class="our-group__title">Наши группы</h2>
-        <p class="our-group__text">В группах занимается до 5 человек. Все дети в группе примерно одного возраста и уровня знаний.</p>
-        <ul class="groups">
-          <li class="group">
-            <h4 class="group__title">Бэбики-1</h4>
-            <span class="group__text">1 раз в неделю</span>
-            <span class="group__text">1,5 часа занятие</span>
-            <b>2500 ₽</b>
-            <span class="group__text">в месяц</span>
-            <a href="#">Записаться</a>
+        <h2 class="our-groups__title">Наши группы</h2>
+        <p class="our-groups__text">В группах занимается до 5 человек. Все дети в группе примерно<br> одного возраста и уровня знаний.</p>
+        <ul class="our-groups__list">
+          <li class="our-groups__item">
+            <h4 class="our-groups__title">Бэбики-1</h4>
+            <span class="our-groups__text our-groups__text--small">1 раз в неделю</span>
+            <span class="our-groups__text our-groups__text--small">1,5 часа занятие</span>
+            <div class="our-groups__price">
+              <b class="our-groups__value">2500 ₽</b>
+              <span class="our-groups__text">в месяц</span>
+            </div>
+            <a class="button button--cyan" href="#">Записаться</a>
           </li>
-          <li class="group">
-            <h4 class="group__title">Бэбики-2</h4>
-            <span class="group__text">2 раза в неделю</span>
-            <span class="group__text">1,5 часа занятие</span>
-            <b>4000 ₽</b>
-            <span class="group__text">в месяц</span>
-            <a href="#">Записаться</a>
+          <li class="our-groups__item our-groups__item--yellow">
+            <h4 class="our-groups__title">Бэбики-2</h4>
+            <span class="our-groups__text">2 раза в неделю</span>
+            <span class="our-groups__text">1,5 часа занятие</span>
+            <div class="our-groups__price">
+              <b class="our-groups__value">4000 ₽</b>
+              <span class="our-groups__text">в месяц</span>
+            </div>
+            <a class="button button--yellow" href="#">Записаться</a>
           </li>
-          <li class="group">
-            <h4 class="group__title">Бэбики-3</h4>
-            <span class="group__text">3 раза в неделю</span>
-            <span class="group__text">1 час занятие</span>
-            <b>4000 ₽</b>
-            <span class="group__text">в месяц</span>
-            <a href="#">Записаться</a>
+          <li class="our-groups__item our-groups__item--pink">
+            <h4 class="our-groups__title">Бэбики-3</h4>
+            <span class="our-groups__text">3 раза в неделю</span>
+            <span class="our-groups__text">1 час занятие</span>
+            <div class="our-groups__price">
+              <b class="our-groups__value">4000 ₽</b>
+              <span class="our-groups__text">в месяц</span>
+            </div>
+            <a class="button button--pink" href="#">Записаться</a>
           </li>
         </ul>
       </div>
     </section>
+
     <section class="teachers">
       <div class="container">
-        <h2 class="teachers__title"></h2>
+        <h2 class="teachers__title">Наши преподаватели</h2>
         <p class="teachers__text">Все наши преподаватели — носители английского языка и имеют необходимое образование и опыт работы с детьми</p>
         <img src="" alt="Преподаватель Кейт Смит">
       </div>
       <div class="swiper teachers-slider">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 1
+            <span>Kate Smith</span>
+            <span>США</span>
+          </div>
           <div class="swiper-slide">Slide 2</div>
           <div class="swiper-slide">Slide 3</div>
           <div class="swiper-slide">Slide 4</div>

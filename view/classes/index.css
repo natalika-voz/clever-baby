@@ -1,6 +1,25 @@
+.classes {
+  @media (width > 767px) {
+    width: 354px;
+  }
+}
+
+.classes__subtitle {
+  margin-block-end: 25px;
+  font-size: 16px;
+  font-weight: 500;
+
+  @media (width > 767px) {
+    margin-block-end: 30px;
+    font-size: 18px;
+  }
+}
+
 .classes__preview {
   position: relative;
+  margin-block-end: 60px;
 }
+
 
 .classes__play {
   position: absolute;

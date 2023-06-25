@@ -1,0 +1,27 @@
+.teachers {
+  position: relative;
+  padding-block-start: 60px;
+  padding-block-end: 55px;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    content: "";
+    height: 48px;
+    width: 30px;
+    background-image: url("/view/teachers/house.svg");
+  }
+}
+
+.teachers__title {
+  font-size: 22px;
+  font-weight: 500;
+  margin-block-end: 30px;
+}
+
+.teachers__text {
+  margin-block-end: 40px;
+  font-size: 14px;
+  line-height: 1.45;
+}
